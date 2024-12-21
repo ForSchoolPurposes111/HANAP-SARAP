@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanap Sarap - CourtCoffee Shops</title>
+  <link rel="stylesheet" href="Category.css">
+  <script defer src="Category.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="/WebProject/Assets/Pictures/Logo.png" alt="Logo"></div>
+    <nav>
+      <ul>
+        <li><a href="/WebProject/HomePage/Homepage.html">Home</a></li>
+        <li><a href="/WebProject/HomePage/Billiard.html">Billiard</a></li>
+        <li><a href="/WebProject/HomePage/Coffee.html">Coffee</a></li>
+        <li><a href="/WebProject/HomePage/Court.html">Court</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Explore Itenary</h1>
+      <p>Find the best Itenary options near City College Of Calamba</p>
+    </div>
+    <div class="hero-image">
+    
+    </div>
+  </section>
+
+  <!-- Breadcrumb Filters -->
+ <!-- Filter Section -->
+<section class="filters">
+  <!-- Barangay Filters -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="setCategory('all')">All</button>
+    <button class="filter-btn" onclick="setCategory('brgy4')">Brgy 4</button>
+    <button class="filter-btn" onclick="setCategory('brgy6')">Brgy 6</button>
+    <button class="filter-btn" onclick="setCategory('Sanjose')">San Jose</button>
+   
+  </div>
+
+  <!-- Price Filter -->
+  <div class="price-filter">
+    <label for="min-price">Min Price:</label>
+    <input type="number" id="min-price" placeholder="₱ 50">
+    <label for="max-price">Max Price:</label>
+    <input type="number" id="max-price" placeholder="₱ 150">
+    <button onclick="filterCards()">Apply</button>
+  </div>
+</section>
+
+
+  <!-- Place Section -->
+  <section class="Place">
+    <h2>All Itenary Near CCC</h2>
+    <div class="place-grid">
+
+
+      <!-- Barangay 4 -->
+      <div class="place-card category-brgy4">
+       <a href="/WebProject/Barangay/Brgy 4/Banga.html">
+         <img src="/WebProject/Assets/Pictures/Itinerary pictures/Itineraries.jpg" alt="Plaza"></a>
+        <div class="card-info">
+          <p class="card-title">Banga</p>
+          <p class="card-cuisine">Food Trip & Tourist Spot</p>
+          <p class="card-cost">MinBudget: ₱20 - ₱50</p>
+        </div>
+      </div>
+
+    
+
+    
+    
+
+
+      <!-- Barangay 6 -->
+      <div class="place-card category-brgy6">
+        <a href="/WebProject/Barangay/Brgy 6/BahayniRizal.html">
+          <img src="/WebProject/Assets/Pictures/Itinerary pictures/Bahay ni Rizal.jpg"alt="Bahay ni Rizal"></a>
+         <div class="card-info">
+           <p class="card-title">Bahay ni Rizal</p>
+           <p class="card-cuisine">Tourist Spot</p>
+           <p class="card-cost">MinBudget: ₱150 </p>
+         </div>
+       </div>
+
+     
+
+
+      <!-- Barangay San Jose -->
+      
+      <div class="place-card category-Sanjose">
+        <a href="/WebProject/Barangay/San Jose/Jenel.html">
+          <img src="/WebProject/Assets/Pictures/Itinerary pictures/Genel pic.jpg"alt="Jenel"></a>
+         <div class="card-info">
+           <p class="card-title">Jenel</p>
+           <p class="card-cuisine">Food Trip</p>
+           <p class="card-cost">MinBudget:₱40 - ₱60</p> 
+         </div>
+       </div>
+
+
+    </div>
+  </section>
+</body>
+
+<footer class="footer">
+  <div class="footer-content">
+   <p>&copy; 2024 Hanap Sarap. All rights reserved.</p>
+  
+ </div>
+</footer>
+</html>

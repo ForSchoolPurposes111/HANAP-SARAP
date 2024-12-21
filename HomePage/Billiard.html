@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanap Sarap - CourtCoffee Shops</title>
+  <link rel="stylesheet" href="Category.css">
+  <script defer src="Category.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="/WebProject/Assets/Pictures/Logo.png" alt="Logo"></div>
+    <nav>
+      <ul>
+        <li><a href="/WebProject/HomePage/Homepage.html">Home</a></li>
+        <li><a href="/WebProject/HomePage/Coffee.html">Coffee</a></li>
+        <li><a href="/WebProject/HomePage/Court.html">Court</a></li>
+        <li><a href="/WebProject/HomePage/Itenary.html">Itenerary</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Explore Billiard Hall</h1>
+      <p>Find the best Billiard Hall options near City College Of Calamba</p>
+    </div>
+    <div class="hero-image">
+    
+    </div>
+  </section>
+
+  <!-- Breadcrumb Filters -->
+ <!-- Filter Section -->
+<section class="filters">
+  <!-- Barangay Filters -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="setCategory('all')">All</button>
+    <button class="filter-btn" onclick="setCategory('brgy3')">Brgy 3</button>
+    <button class="filter-btn" onclick="setCategory('brgy4')">Brgy 4</button>
+    <button class="filter-btn" onclick="setCategory('brgy5')">Brgy 5</button>
+    <button class="filter-btn" onclick="setCategory('brgy6')">Brgy 6</button>
+    <button class="filter-btn" onclick="setCategory('Banadero')">Banadero</button>
+   
+  </div>
+
+  <!-- Price Filter -->
+  <div class="price-filter">
+    <label for="min-price">Min Price:</label>
+    <input type="number" id="min-price" placeholder="₱ 50">
+    <label for="max-price">Max Price:</label>
+    <input type="number" id="max-price" placeholder="₱ 150">
+    <button onclick="filterCards()">Apply</button>
+  </div>
+</section>
+
+
+  <!-- Place Section -->
+  <section class="Place">
+    <h2>All Billiard Hall CCC</h2>
+    <div class="place-grid">
+      <!-- Barangay 3 -->
+      <div class="place-card category-brgy3">
+       <a href="/WebProject/Barangay/Brgy 3/Billiard.Html">
+         <img src="/WebProject/Assets/Pictures/Billiard Pic/Billiar. 3.jpg" alt="Brgy. 3 Billiard Hall"></a>
+        <div class="card-info">
+          <p class="card-title">Brgy. 3 Billiard Hall</p>
+          <p class="card-cuisine">2 Table</p>
+          <p class="card-cost">₱80 per Hour</p>
+        </div>
+      </div>
+
+      <div class="place-card category-brgy3">
+        <a href="/WebProject/Barangay/Brgy 3/Moonbucks.html">
+          <img src="/WebProject/Assets/Pictures/Cafe pictures/Moonbucks.jpg" alt="MoonBucks"></a>
+         <div class="card-info">
+           <p class="card-title">MoonBucks</p>
+           <p class="card-cuisine">2 Table</p>
+           <p class="card-cost">₱200 per Hour</p>
+         </div>
+       </div>
+
+    
+
+      <!-- Barangay 4 -->
+      <div class="place-card category-brgy4">
+        <a href="/WebProject/Barangay/Brgy 4/Bilyaran sa delpilar.html">
+          <img src="/WebProject/Assets/Pictures/Billiard Pic/Brgy 4 bilyar.jpg" alt="Brgy. 3 Billiard Hall"></a>
+         <div class="card-info">
+           <p class="card-title">Bilyaran sa DelPilar</p>
+           <p class="card-cuisine">2 Table</p>
+           <p class="card-cost">₱10 - ₱15 </p>
+         </div>
+       </div>
+    
+
+
+      <!-- Barangay 5 -->
+      <div class="place-card category-brgy5">
+        <a href="/WebProject/Barangay/Brgy 5/Canicosa.html">
+          <img src="/WebProject/Assets/Pictures/Billiard Pic/Canicosa.jpg"alt="CANICOSA BILLIARD HALL"></a>
+         <div class="card-info">
+           <p class="card-title">CANICOSA BILLIARD HALL</p>
+           <p class="card-cuisine">2 Table</p>
+           <p class="card-cost">₱50 per Hour </p>
+         </div>
+       </div>
+
+      
+
+     <!-- Barangay 6 -->
+     <div class="place-card category-brgy6">
+      <a href="/WebProject/Barangay/Brgy 6/AG billiard.html">
+        <img src="/WebProject/Assets/Pictures/Billiard Pic/AG Bilyar.jpg"alt="AG Square Billiard Hall"></a>
+       <div class="card-info">
+         <p class="card-title">AG Square Billiard Hall</p>
+         <p class="card-cuisine">4 Table</p>
+         <p class="card-cost">₱100 per Hour </p>
+       </div>
+     </div>
+
+      <!-- Barangay Banadero -->
+      
+      <div class="place-card category-Banadero">
+        <a href="/WebProject/Barangay/Banadero/Masters Billiard.html">
+          <img src="/WebProject/Assets/Pictures/Billiard Pic/Master's Billiard.jpg"alt="Master's Billiard"></a>
+         <div class="card-info">
+           <p class="card-title">Master's Billiard</p>
+           <p class="card-cuisine">2 Table</p>
+           <p class="card-cost">₱8 - ₱12 </p>
+         </div>
+       </div>
+
+
+    </div>
+  </section>
+</body>
+
+<footer class="footer">
+  <div class="footer-content">
+   <p>&copy; 2024 Hanap Sarap. All rights reserved.</p>
+  
+ </div>
+</footer>
+</html>

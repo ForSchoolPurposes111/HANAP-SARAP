@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanap Sarap - Coffee Shops</title>
+  <link rel="stylesheet" href="Category.css">
+  <script defer src="Category.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="/WebProject/Assets/Pictures/Logo.png" alt="Logo"></div>
+    <nav>
+      <ul>
+        <li><a href="/WebProject/HomePage/Homepage.html">Home</a></li>
+        <li><a href="/WebProject/HomePage/Billiard.html">Billiard</a></li>
+        <li><a href="/WebProject/HomePage/Court.html">Court</a></li>
+        <li><a href="/WebProject/HomePage/Itenary.html">Itenerary</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Explore Coffee Shops</h1>
+      <p>Find the best Coffee Shop options near City College Of Calamaba</p>
+    </div>
+    <div class="hero-image">
+    
+    </div>
+  </section>
+
+  <!-- Breadcrumb Filters -->
+ <!-- Filter Section -->
+<section class="filters">
+  <!-- Barangay Filters -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="setCategory('all')">All</button>
+    <button class="filter-btn" onclick="setCategory('brgy3')">Brgy 3</button>
+    <button class="filter-btn" onclick="setCategory('brgy4')">Brgy 4</button>
+    <button class="filter-btn" onclick="setCategory('brgy5')">Brgy 5</button>
+    <button class="filter-btn" onclick="setCategory('brgy6')">Brgy 6</button>
+    <button class="filter-btn" onclick="setCategory('brgy7')">Brgy 7</button>
+  </div>
+
+  <!-- Price Filter -->
+  <div class="price-filter">
+    <label for="min-price">Min Price:</label>
+    <input type="number" id="min-price" placeholder="₱ 50">
+    <label for="max-price">Max Price:</label>
+    <input type="number" id="max-price" placeholder="₱ 150">
+    <button onclick="filterCards()">Apply</button>
+  </div>
+</section>
+
+
+  <!-- Place Section -->
+  <section class="Place">
+    <h2>All Coffee Shops Near CCC</h2>
+    <div class="place-grid">
+      <!-- Barangay 3 -->
+      <div class="place-card category-brgy3">
+       <a href="/WebProject/Barangay/Brgy 3/Egis.html"> <img src="/WebProject/Assets/Pictures/Cafe pictures/Egis.jpg" alt="Egis Cafe"></a>
+        <div class="card-info">
+          <p class="card-title">Egis Cafe</p>
+          <p class="card-cuisine">Coffee & MilkTea</p>
+          <p class="card-cost">₱89 - ₱200</p>
+        </div>
+      </div>
+
+      <div class="place-card category-brgy3">
+       <a href="/WebProject/Barangay/Brgy 3/Moonbucks.html">
+         <img src="/WebProject/Assets/Pictures/Cafe pictures/Moonbucks.jpg" alt="Moonbucks Coffee Shop"></a>
+        <div class="card-info">
+          <p class="card-title">Moonbucks Coffee Shop</p>
+          <p class="card-cuisine">Coffee & Billiard</p>
+          <p class="card-cost">₱80 - ₱200</p>
+        </div>
+      </div>
+      
+      <div class="place-card category-brgy3">
+        <a href="/WebProject/Barangay/Brgy 3/Brgy6Bigbrew.html">
+           <img src="/WebProject/Assets/Pictures/Cafe pictures/Brgy 3 Bibrew.jpg" alt="Moonbucks Coffee Shop"></a>
+         <div class="card-info">
+           <p class="card-title">Brgy 3 - BigBrew</p>
+           <p class="card-cuisine">Coffee</p>
+           <p class="card-cost">₱29 - ₱100</p>
+         </div>
+       </div>
+
+      <!-- Barangay 4 -->
+      <div class="place-card category-brgy4">
+        <a href="/WebProject/Barangay/Brgy 4/DaksJuts.html">
+           <img src="/WebProject/Assets/Pictures/Cafe pictures/Daksorjuts.jpg" alt="DAKS OR JUTS"></a>
+         <div class="card-info">
+           <p class="card-title">DAKS OR JUTS</p>
+           <p class="card-cuisine">Coffee</p>
+           <p class="card-cost">₱39 - ₱129</p>
+         </div>
+       </div>
+
+       <div class="place-card category-brgy4">
+        <a href="/WebProject/Barangay/Brgy 4/brgy4BigBrew.html">
+           <img src="/WebProject/Assets/Pictures/Cafe pictures/brg4Bigbrew.jpg" alt="BIG BREW"></a>
+         <div class="card-info">
+           <p class="card-title">Brgy 4 - BIG BREW</p>
+           <p class="card-cuisine">Coffee</p>
+           <p class="card-cost">₱29 - ₱100</p>
+         </div>
+       </div>
+
+
+      <!-- Barangay 5 -->
+      <div class="place-card category-brgy5">
+        <a href="/WebProject/Barangay/Brgy 5/250 Cafe.html">
+           <img src="/WebProject/Assets/Pictures/Cafe pictures/250 CAFE.jpg" alt="250 Café"></a>
+         <div class="card-info">
+           <p class="card-title">250 Café</p>
+           <p class="card-cuisine">Coffee</p>
+           <p class="card-cost">₱80 - ₱160</p>
+         </div>
+       </div>
+
+       <div class="place-card category-brgy5">
+        <a href="/WebProject/Barangay/Brgy 5/Cauffee.html">
+           <img src="/WebProject/Assets/Pictures/Cafe pictures/Caufee.jpg" alt="250 Café"></a>
+         <div class="card-info">
+           <p class="card-title">Caufee</p>
+           <p class="card-cuisine">Coffee</p>
+           <p class="card-cost">₱35 - ₱060</p>
+         </div>
+       </div>
+
+     <!-- Barangay 6 -->
+     <div class="place-card category-brgy6">
+      <a href="/WebProject/Barangay/Brgy 6/DashCoffe.html">
+         <img src="/WebProject/Assets/Pictures/Cafe pictures/Dash Coffee.jpg" alt="Dash Coffee"></a>
+         <div class="card-info">
+          <p class="card-title">Dash Coffee</p>
+          <p class="card-cuisine">Coffee</p>
+          <p class="card-cost">₱39 - ₱59</p>
+         </div>
+     </div>
+
+     <div class="place-card category-brgy6">
+      <a href="/WebProject/Barangay/Brgy 6/Intensitea.html">
+         <img src="/WebProject/Assets/Pictures/Cafe pictures/Intensitea.jpg" alt="Intensitea Blends"></a>
+         <div class="card-info">
+          <p class="card-title">Intensitea Blends</p>
+          <p class="card-cuisine">Coffee</p>
+          <p class="card-cost">₱29 - ₱85</p>
+        </div>
+     </div>
+
+  <!-- Barangay 6 -->
+  <div class="place-card category-brgy7">
+    <a href="/WebProject/Barangay/Brgy 7/1128tea.html">
+       <img src="/WebProject/Assets/Pictures/Cafe pictures/1128.jpg" alt="1128 Tea & Cafe"></a>
+       <div class="card-info">
+        <p class="card-title">1128 Tea & Cafe</p>
+        <p class="card-cuisine">Coffee & Cafe </p>
+        <p class="card-cost">₱28 - ₱88</p>
+      </div>
+
+   </div>
+
+   <div class="place-card category-brgy7">
+    <a href="/WebProject/Barangay/Brgy 7/Coffeea.html">
+       <img src="/WebProject/Assets/Pictures/Cafe pictures/Coffee.jpg" alt="Coffea"></a>
+       <div class="card-info">
+        <p class="card-title">Coffea</p>
+        <p class="card-cuisine">Coffee</p>
+        <p class="card-cost">₱100 - ₱200</p>
+      </div>
+   </div>
+
+   <div class="place-card category-brgy7">
+    <a href="/WebProject/Barangay/Brgy 7/PurpleBlend.html">
+       <img src="/WebProject/Assets/Pictures/Cafe pictures/Purpleblend.jpg" alt="Purple Blend"></a>
+       <div class="card-info">
+        <p class="card-title">Purple Blend</p>
+        <p class="card-cuisine">Coffee </p>
+        <p class="card-cost">₱70 - ₱200</p>
+      </div>
+
+   </div>
+
+    </div>
+  </section>
+</body>
+
+<footer class="footer">
+  <div class="footer-content">
+   <p>&copy; 2024 Hanap Sarap. All rights reserved.</p>
+  
+ </div>
+</footer>
+</html>

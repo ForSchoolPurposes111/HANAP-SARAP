@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hanap Sarap - CourtCoffee Shops</title>
+  <link rel="stylesheet" href="Category.css">
+  <script defer src="Category.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo"><img src="/WebProject/Assets/Pictures/Logo.png" alt="Logo"></div>
+    <nav>
+      <ul>
+        <li><a href="/WebProject/HomePage/Homepage.html">Home</a></li>
+        <li><a href="/WebProject/HomePage/Coffee.html">Coffee</a></li>
+        <li><a href="/WebProject/HomePage/Billiard.html">Billiard</a></li>
+        <li><a href="/WebProject/HomePage/Itenary.html">Itenerary</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Explore Courts</h1>
+      <p>Find the best Court options near City College Of Calamba</p>
+    </div>
+    <div class="hero-image">
+   
+    </div>
+  </section>
+
+  <!-- Breadcrumb Filters -->
+ <!-- Filter Section -->
+<section class="filters">
+  <!-- Barangay Filters -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" onclick="setCategory('all')">All</button>
+    <button class="filter-btn" onclick="setCategory('brgy3')">Brgy 3</button>
+    <button class="filter-btn" onclick="setCategory('brgy5')">Brgy 5</button>
+    <button class="filter-btn" onclick="setCategory('brgy7')">Brgy 7</button>
+    <button class="filter-btn" onclick="setCategory('Banadero')">Banadero</button>
+   
+  </div>
+
+  <!-- Price Filter -->
+  <div class="price-filter">
+    <label for="min-price">Min Price:</label>
+    <input type="number" id="min-price" placeholder="₱ 50">
+    <label for="max-price">Max Price:</label>
+    <input type="number" id="max-price" placeholder="₱ 150">
+    <button onclick="filterCards()">Apply</button>
+  </div>
+</section>
+
+
+  <!-- Place Section -->
+  <section class="Place">
+    <h2>All Courts Near CCC</h2>
+    <div class="place-grid">
+      <!-- Barangay 3 -->
+      <div class="place-card category-brgy3">
+       <a href="/WebProject/Barangay/Brgy 3/B3 Court.html">
+         <img src="/WebProject/Assets/Pictures/Courts pictures/Brgy. 3 Court.png" alt="Brgy. 3 Billiard Hall"></a>
+        <div class="card-info">
+          <p class="card-title">Brgy. 3 Court</p>
+          <p class="card-cuisine">Coevered Court</p>
+          <p class="card-cost">₱100 per Hour</p>
+        </div>
+      </div>
+
+    
+
+    
+    
+
+
+      <!-- Barangay 5 -->
+      <div class="place-card category-brgy5">
+        <a href="/WebProject/Barangay/Brgy 5/B5 Court.html">
+          <img src="/WebProject/Assets/Pictures/Courts pictures/Brgy. 5 Court.png"alt="CANICOSA BILLIARD HALL"></a>
+         <div class="card-info">
+           <p class="card-title">Brgy. 5 Court</p>
+           <p class="card-cuisine">Not Covered Court</p>
+           <p class="card-cost">₱100 per Hour</p>
+         </div>
+       </div>
+
+      <!-- Barangay 7 -->
+      <div class="place-card category-brgy7">
+        <a href="/WebProject/Barangay/Brgy 7/B7 Court.html">
+          <img src="/WebProject/Assets/Pictures/Courts pictures/Brgy. 7.jpg"alt="CANICOSA BILLIARD HALL"></a>
+         <div class="card-info">
+           <p class="card-title">Brgy. 7 Court</p>
+           <p class="card-cuisine"> Covered Court</p>
+           <p class="card-cost">₱200 per Hour</p>
+         </div>
+       </div>
+
+
+      <!-- Barangay Banadero -->
+      
+      <div class="place-card category-Banadero">
+        <a href="/WebProject/Barangay/Banadero/Bria.html">
+          <img src="/WebProject/Assets/Pictures/Courts pictures/Bria Court.png"alt="Master's Billiard"></a>
+         <div class="card-info">
+           <p class="card-title">Bria Court</p>
+           <p class="card-cuisine">Covered Court</p>
+           <p class="card-cost">₱150 per Hour</p>
+         </div>
+       </div>
+
+
+    </div>
+  </section>
+</body>
+
+<footer class="footer">
+  <div class="footer-content">
+   <p>&copy; 2024 Hanap Sarap. All rights reserved.</p>
+  
+ </div>
+</footer>
+</html>
